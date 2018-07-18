@@ -1,40 +1,42 @@
+<!--<!DOCTYPE html> -->
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Cookie Book</title>
-      <link rel="stylesheet" type="text/css" href="css/styles.css">
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="header">Cookie Book</h1>
+ <head>
+   <meta charset="UTF-8">
+   <title>Pre-Workout Questions</title>
+     <link rel="stylesheet" type="text/css" href = "/css/styles.css">
+ </head>
+ <body>
+   <div class="container">
+     <h1 class="header">Pre-Workout Questions</h1>
 
-      <h4 class="caption"> Find which cookie to bake!</h4>
-      <div class="question">
-      <form action="/results" method="post">
-      <h2>What is this cookie for?</h2>
-        <input type="radio" name="meal" value="3">Dessert<br>
-        <input type="radio" name="meal" value="2">Snack<br>
-        <input type="radio" name="meal" value="1">Energy
-        <h2>What should this cookie taste like?</h2>
-        <input type="radio" name="flavor" value="2">Salty<br>
-        <input type="radio" name="flavor" value="1"> Fruity<br>
-        <input type="radio" name="flavor" value="3">Sweet<br>
-        <h2> Which of these ingredients would you prefer? </h2>
-          <input type="radio" name="thing" value="1" >Fruit<br>
-          <input type="radio" name="thing" value="3">Chocolate <br>
-          <input type="radio" name="thing" value="2">Nuts<br>
-        <!-- <h2> How experienced are you with baking?</h2>
+     <h4 class="caption">Find out what type of workout to do today!</h4>
+     <div class="question">
+     <form action="/results" method="post">
+     <h2>What type of workout do you want to do?</h2>
+       <input type="radio" name="workout" value="1">Cardio<br>
+       <input type="radio" name="workout" value="100">Strength<br>
+     
+       <h2>How long do you want the workout to be?</h2>
+       <input type="radio" name="length" value="1">30 minutes<br>
+       <input type="radio" name="length" value="2">1 hour<br>
+       <input type="radio" name="length" value="3">1.5 hours<br>
+       
+       <h2> What intensity do you want the workout to be? </h2>
+         <input type="radio" name="intensity" value="1" >Low<br>
+         <input type="radio" name="intensity" value="2">Medium<br>
+         <input type="radio" name="intensity" value="3">High<br>
+       <!-- <h2> How experienced are you with baking?</h2>
 <br> -->
 
-          <!-- <input type="radio" name="skill" value="A" >I'm an expert
+         <!-- <input type="radio" name="skill" value="A" >I'm an expert
+       <input type="radio" name="skill" value="B"> I've baked a bit <br>
+         <input type="radio" name="skill" value="C">I've never baked anything really
+           <br> -->
+       <br>
+         <button type = "submit" class="new"> Let's Workout!</button>
+     </form>
+   </div>
+ </div>
 
-        <input type="radio" name="skill" value="B"> I've baked a bit <br>
-          <input type="radio" name="skill" value="C">I've never baked anything really
-            <br> -->
-          <button type = "submit" class="new"> Let's bake! </button>
-      </form>
-    </div>
-  </div>
-
-  </body>
+ </body>
 </html>
