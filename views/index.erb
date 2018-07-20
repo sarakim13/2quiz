@@ -1,42 +1,78 @@
-<!--<!DOCTYPE html> -->
-<html>
- <head>
-   <meta charset="UTF-8">
-   <title>Pre-Workout Questions</title>
-     <link rel="stylesheet" type="text/css" href = "/css/styles.css">
- </head>
- <body>
-   <div class="container">
-     <h1 class="header">Pre-Workout Questions</h1>
+<!DOCTYPE html> 
+<html> 
+  <head><title>Welcome to QuickFit!</title>
+  <link rel = "stylesheet" type = "text/css" href = "health.css">
 
-     <h4 class="caption">Find out what type of workout to do today!</h4>
-     <div class="question">
-     <form action="/results" method="post">
-     <h2>What type of workout do you want to do?</h2>
-       <input type="radio" name="workout" value="1">Cardio<br>
-       <input type="radio" name="workout" value="100">Strength<br>
-     
-       <h2>How long do you want the workout to be?</h2>
-       <input type="radio" name="length" value="1">30 minutes<br>
-       <input type="radio" name="length" value="2">1 hour<br>
-       <input type="radio" name="length" value="3">1.5 hours<br>
-       
-       <h2> What intensity do you want the workout to be? </h2>
-         <input type="radio" name="intensity" value="1" >Low<br>
-         <input type="radio" name="intensity" value="2">Medium<br>
-         <input type="radio" name="intensity" value="3">High<br>
-       <!-- <h2> How experienced are you with baking?</h2>
-<br> -->
+  <script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+  
+  
+  
+  
+  
+  
+  </head>
+  <style> * {box-sizing: border-box}
 
-         <!-- <input type="radio" name="skill" value="A" >I'm an expert
-       <input type="radio" name="skill" value="B"> I've baked a bit <br>
-         <input type="radio" name="skill" value="C">I've never baked anything really
-           <br> -->
-       <br>
-         <button type = "submit" class="new"> Let's Workout!</button>
-     </form>
-   </div>
- </div>
+body {background-image: url("https://avatars.mds.yandex.net/get-pdb/234183/348795d2-6952-4743-b410-66b24b9151d5/orig"); 
+background-size: cover;
 
- </body>
+
+}</style>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<body>
+ <center><nav> 
+  <a href = "./index.erb" > Home Page</a>
+  <a href = "./index1.erb" > Workout Quiz </a>
+  
+  </nav></center>
+  <header><center><h1 style=font-size:70px><font color="white">Welcome to QuickFit</font></h1></center></header>
+  
+  
+  
+  
+  
+  
+<center><h1 style=font-size:170px><font color="white"><body onload="startTime()">
+
+<div id="txt"></div>
+
+</font>
+  
+  <header><h1 style=font-size:70px><font color="white">Ready to workout? Click <a href ="index1.erb"> here!</a></font></h1></header> 
+  <header><h1 style=font-size:30px><font color="white"> <a href ="signup.erb"> Sign Up or Login</a></font></h1></header>
+
+  
+</body></center>
+
+<footer><center><h2><font color="white">"Small daily improvements are the key to staggering long-term results." -Anonymous</font></h2></center></footer>
+ 
+  
+
+  
+</body>  
+ 
 </html>
