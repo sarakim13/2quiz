@@ -20,7 +20,7 @@ get '/index1.erb' do
   end 
   
   get '/index.erb' do
-    "Hello World"
+    erb: index
   end
  get '/questions' do
    erb :questions
